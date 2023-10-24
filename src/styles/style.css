@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background: #ff7051;
+
+}
+
+.topHeader {
+    width: 300%;
+
+    animation: textAround 30s ease-in-out 0ms infinite;
+    position: fixed;
+    top: 30px;
+    left: 0;
+
+}
+
+
+h1 {
+    margin-top: 50px;
+    font-size: 2em;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+    padding: 20px 10px;
+    font-size: 1.1em;
+}
+
+li>button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+ul {
+    border-radius: 5px;
+    margin-left: 2vw;
+    padding: 0 16vw;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    /* position: relative; */
+
+}
+
+input[type="text"] {
+    background-color: #fff;
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    padding: 0 0 0 10px;
+    margin: 10px 0;
+}
+
+button {
+    height: 0px;
+    width: 0;
+}
+
+button svg {
+    background-color: white;
+    border: none;
+    margin: 5px 100px 0 0;
+    height: 35px;
+    border-radius: 0 5px 5px 0;
+    width: max-content;
+
+
+}
+
+.tablist {
+    height: fit-content;
+    width: 25vw;
+    top: 10%;
+    left: 40vw;
+    background-color: #fff;
+}
+
+.tablist button .suppr {
+    background: #ff7051;
+    padding: 1px 18px 2px 7px;
+    border-radius: 50%;
+}
+
+.parent {
+    background-color: black;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.parentI {
+    background-color: white;
+    padding: 0 39px 0 3px;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.animText1 {}
+
+@-webkit-keyframes textAround {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes textAround {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
+@media screen and (max-width:476px) {
+    body {
+        position: absolute;
+        text-decoration: (-50%, -50%);
+        top: 10%;
+        /* left: 10%; */
+        background: #ff7051;
+
+    }
+
+    .contentP {
+        display: block;
+        /* margin-right: 50px; */
+        width: 114vw;
+    }
+
+    .parentI {
+        background-color: white;
+        padding: 0 39px 0 3px;
+        border-radius: 20px;
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 367px;
+        margin: 0 5px 20px;
+    }
+
+    .parent {
+        margin-top: 50px;
+        background-color: black;
+        padding: 20px 39px;
+        margin: 0 0px 0 0;
+        border-radius: 20px;
+    }
+
+    ul {
+        border-radius: 5px;
+        /* margin-right: 96vw; */
+        padding: 0 25vw 0 0;
+    }
+
+    .tablist {
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 70vw;
+        top: 10%;
+        left: 40vw;
+        background-color: #fff;
+        margin-right: 30vw;
+    }
+
+    .topHeader::before {
+        width: 50%;
+
+        /* content: "Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart             Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart"; */
+        content: "Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart";
+
+        color: black;
+        text-transform: uppercase;
+
+    }
+
+
+    /* 
+    .topHeader::after {
+        width: 100%;
+
+        content: "Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart             Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart";
+
+        color: black;
+        text-transform: uppercase;
+
+    } */
+
+}
+
+@media screen and (min-width:992px) {
+    body {
+        position: absolute;
+        text-decoration: (-50%, -50%);
+        top: 10%;
+        left: 10%;
+        background: #ff7051;
+
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .topHeader::before {
+        width: 100%;
+
+        content: "Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart             Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart";
+
+        color: black;
+        text-transform: uppercase;
+
+    }
+
+
+
+    .topHeader::after {
+        width: 100%;
+
+        content: "Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart             Welcome to my board       Add all the activities you want done   This way you will have a free mind and a light heart";
+
+        color: black;
+        text-transform: uppercase;
+
+    }
+
+}
